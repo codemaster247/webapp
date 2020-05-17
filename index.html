@@ -1,0 +1,167 @@
+<html>
+ <head>
+  <title>Jah Website</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" >
+ </head>
+<body>
+
+	<header>
+
+	    <nav>
+			<div class="toggle">
+				<i class="fa fa-bars menu" aria-hidden="true"></i>
+
+			</div>
+
+		    <ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#bio">Sobre</a></li>
+				<li><a href="#music">Musicas</a></li>
+				<li><a href="#vids">Videos</a></li>
+				<li><a href="#contact">Contatos</a></li>
+			</ul>
+		</nav>
+		<script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.menu').click(function(){
+					$('ul').toggleClass('active');
+				})
+			})
+		</script>
+	</header>
+
+	<main>
+		<div class="about_section">
+			<section id="about">
+				<h2 id="bio">Sobre Mim</h2>
+				<hr>
+				<p>
+					Lorem ipsum dolor sit amet.
+					Lorem ipsum dolor sit amet consectetur.
+					Lorem, ipsum.
+				</p>
+
+			</section>
+		</div>
+
+		<section class="music_section">
+			<h2 id="music">Musicas</h2>
+			<hr>
+			<p>Lorem ipsum dolor sit.</p>
+
+			<div class="row">
+
+				<div class="column_one">
+					<img src="images/VICE.png" alt="VICE" style="width: 100%;">
+
+					<button class="btn listen">Listen</button>
+				</div>
+
+				<div class="column_two">
+					<img src="images/My Post-3.png" alt="VICE" style="width: 100%;">
+
+					<button class="btn listen">Listen</button>
+				</div>
+
+				<div class="column_three">
+					<img src="images/VICE.png" alt="VICE" style="width: 100%;">
+
+					<button class="btn listen">Listen</button>
+				</div>
+
+			</div>
+
+
+		</section>
+
+		<section class="vid_section">
+			<h2 id="vids">Videos</h2>
+			<hr>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+			<div>
+				<div class="container">
+					<div class="col_one">
+						<img src="images/mantvivo1.png"  alt="mantivivo killatempo">
+					</div>
+					<div class="col_two">
+						<img src="images/ribala1.png"  alt="ribala killatempo ">
+					</div>
+					<div class="col_three">
+						<img src="images/nkasimae1.png"  alt="nkasimaes killatempo">
+					</div>
+					<div class="col_four">
+						<img src="images/mvida1.png" alt="masvida killatempo">
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="contact_section">
+			<h2 id="contact">Contatos</h2>
+			<hr>
+			<div class="column">
+
+				<form>
+					<p>
+						<label>First Name</label>
+						<input type="text" id="fname" name="firstname" placeholder="Your name..">
+					</p>
+
+					<p>
+					   <label>Last Name</label>
+					   <input type="text" name="lname" id="lname" placeholder="Last name..">
+					</p>
+
+					<p>
+						<label>E-mail</label>
+						<input type="text" name="email" id="email" placeholder="jonhdoe@example.com">
+					</p>
+
+					<p>
+						<label>Ilha</label>
+						<select name="island" id="island">
+						<option value="sAntao">Santo Antao</option>
+						<option value="sNicolau">S. Nicolau</option>
+						<option value="svicente">S. Vicente</option>
+						<option value="sal">Sal</option>
+						<option value="boavista">Boa Vista</option>
+						<option value="maio">Maio</option>
+						<option value="santiago">Santiago</option>
+						<option value="fogo">Fogo</option>
+						<option value="brava">Brava</option>
+					</select>
+					</p>
+
+
+					<p class="full">
+						<label for="subject">Assunto</label>
+						<textarea name="message" id="subject"  rows="5" placeholder="escrever aqui.."></textarea>
+					</p>
+
+
+					<p class="full">
+						<button>submit</button>
+					</p>
+
+				</form>
+
+			</div>
+		</section>
+
+
+
+	</main>
+
+	<footer>
+		<div>
+			<p>&copy;INavigate</p>
+		</div>
+	</footer>
+</body>
+
+
+</html>
