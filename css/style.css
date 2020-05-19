@@ -8,7 +8,7 @@ body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-nav{
+#navbar{
 
     letter-spacing: 3px;
     opacity: .9;
@@ -18,6 +18,12 @@ nav{
     width: 100%;
     font-family: Montserrat, sans-serif;
 }
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 
 footer{
     opacity: .9;
@@ -81,7 +87,7 @@ hr{
 
 .about_section{
     background-color: #f2f2f2;
-    padding-top: 10px;
+    padding-top: 50px;
     text-align: center;
 }
 
@@ -99,7 +105,7 @@ music section styling
 */
 .music_section{
     text-align: center;
-    padding-top: 10px;
+    padding-top: 50px;
 }
 
 
@@ -113,7 +119,7 @@ music section styling
     justify-content: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding-top: 10px;
+    padding-top: 50px;
 
 
 }
@@ -151,14 +157,14 @@ button:hover{
 
 
 .vid_section{
-    text-align: center;
-    padding-top: 10px;
-    background-color: #f2f2f2;
+  text-align: center;
+  padding-top: 50px;
+  background-color: #f2f2f2;
 }
 
 .vid_section p{
-    color: gray;
-    margin-top: 20px;
+  color: gray;
+  margin-top: 20px;
 
 
 }
@@ -166,34 +172,33 @@ button:hover{
     for 4 images in a 2x2 column
 */
 .container{
-    padding-top: 10px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    cursor: pointer;
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  cursor: pointer;
 }
 
 /*styling contact session*/
 .contact_section{
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    text-align: center;
-    border-radius: 5px;
-    padding: 10px;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 .column form{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
 
 }
 
 .column form label{
-    display: block;
+   display: block;
    justify-content: start;
 }
 .column form p{
@@ -210,27 +215,39 @@ button:hover{
 .column form select{
     padding: 0.6em;
 }
+.full  > button{
+  border: none;
+  text-transform: uppercase;
+  background-color: #001f44;
+  color: #fff;
+  cursor: pointer;
+
+}
+.full > button :hover{
+  background-color: #001f44;
+
+}
 
 @media screen and (max-width: 786px) {
     .row{
        display: flex;
 
     }
-    .column_one{
-        width: 93%;
-        padding-top: 1rem;
+    .column_one, .column_two, .column_three{
+        width: 100%;
+
 
     }
-    .column_two{
-        width: 93%;
-        padding-top: 1rem;
+    .container{
+      display: block;
+
 
     }
-    .column_three{
-        width: 93%;
-        padding-top: 1rem;
+    .col_one,.col_two,.col_three,.col_four{
+      width: 100%;
 
     }
+
     .toggle{
         cursor: pointer;
         display: block;
@@ -247,19 +264,11 @@ button:hover{
 
         display: block;
     }
-    .container{
-        display: flex;
-        justify-content: center;
-        justify-items: center;
-        flex-direction: column;
 
-    }
-    .col_one{
-        width: fit-content;
-    }
     .column, input[type=submit] {
         width: 100%;
         margin-top: 0;
     }
+}
 
 }
