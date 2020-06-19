@@ -1,13 +1,12 @@
 $(document).ready(function () {
-  $('.menu').click(function(){
+  $('.menu').click(function () {
     $('ul').toggleClass('active');
-  })
-
-})
-
+  });
+});
 
 
-window.onscroll = function(){myFunction()};
+
+window.onscroll = function () { myFunction()};
 var navbar = document.getElementById("navbar");
 
 var sticky = navbar.offsetTop;
@@ -18,6 +17,7 @@ function myFunction() {
 
   }else {
     navbar.classList.remove("sticky");
+
   }
 
 }

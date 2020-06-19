@@ -1,11 +1,23 @@
+:root {
+  --black: #545454;
+
+}
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-/* TODO: reponsiveness for images in videos section  */
-/**/
-body{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+body {
+    font-family: Itim , sans-serif;
+}
+
+p {
+
+  font-family: Josefin Sans, sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
 }
 
 #navbar{
@@ -13,31 +25,71 @@ body{
     letter-spacing: 3px;
     opacity: .9;
     background-color: #0B1129;
-    font-size: 14px;
+    font-size: 1.1rem;
     text-transform: uppercase;
     width: 100%;
-    font-family: Montserrat, sans-serif;
+    font-family: Itim, sans-serif;
 }
+
+.showcase {
+
+  width: 100%;
+  height: 93vh;
+  position: relative;
+  background: url('../images/background.jpg') no-repeat center center/cover;
+  box-shadow: inset 120px 100px 250px #000000, inset -120px -120px 250px #000000;
+
+}
+
+
+.showcase-top h1 {
+  color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  transform: translate(-30%);
+  text-align: center;
+}
+
+.showcase-top a {
+
+  background: transparent;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(45%, 100%);
+  line-height: 1.1rem;
+}
+
+.showcase-top a:hover {
+  border: transparent;
+  background:#0B1129;
+}
+
 .sticky{
+  background-color: #0B1129;
   position: fixed;
   top: 0;
   width: 100%;
 }
 
-
-footer{
+footer {
     opacity: .9;
     background-color: #0B1129;
-    height: 80px;
+    height: 100px;
     font-size: 18px;
     color: white;
-    clear: both;
+
 }
-footer p{
+
+footer p {
    text-align: center;
    padding-top: 10px;
 }
+
 ul{
+
     text-align: center;
     width: 80%;
     margin: 0 auto;
@@ -45,15 +97,16 @@ ul{
 }
 
 ul li{
+
+    border-radius: 10px;
     padding: 15px;
     list-style: none;
     display: inline-block;
 
 }
-ul li:hover{
-    background: #001f44;
-    color: #0B1129;
 
+ul li:hover {
+    background: #001f44;
 }
 
 ul li a{
@@ -65,6 +118,7 @@ h2{
     text-align: center;
     text-transform: uppercase;
 }
+
 hr{
     height: 5px;
     width: 50px;
@@ -74,6 +128,7 @@ hr{
     position: relative;
     margin-top: 5px;
 }
+
 .toggle{
     width: 100%;
     padding: 10px 20px;
@@ -83,6 +138,7 @@ hr{
     color: #fff;
     font-size: 30px;
     display: none;
+
 }
 
 .about_section{
@@ -90,7 +146,6 @@ hr{
     padding-top: 50px;
     text-align: center;
 }
-
 
 #about p{
 
@@ -108,19 +163,18 @@ music section styling
     padding-top: 50px;
 }
 
-
 .music_section p{
     margin-top: 20px;
 }
 
 .row{
+
     display: flex;
     flex-basis: 27%;
     justify-content: center;
     justify-content: space-around;
     flex-wrap: wrap;
     padding-top: 50px;
-
 
 }
 .column_one{
@@ -147,6 +201,7 @@ music section styling
     border-radius: 5px;
     margin-top: 10px;
     text-transform: uppercase;
+    line-height: 1.1rem;
 
 }
 
@@ -228,38 +283,57 @@ button:hover{
 
 }
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 800px) {
+
+
+  .showcase {
+
+    width: 100%;
+    height: 70vh;
+    position: relative;
+  }
+  .showcase-top h1{
+    transform: translate(-40%);
+  }
+  .showcase-top a {
+    position: absolute;
+    transform: translate(-10%, 100%);
+    top: 60%;
+
+  }
     .row{
        display: flex;
-
     }
+
     .column_one, .column_two, .column_three{
         width: 100%;
-
-
     }
+
     .container{
       display: block;
-
-
     }
+
     .col_one,.col_two,.col_three,.col_four{
       width: 100%;
 
     }
 
     .toggle{
+
         cursor: pointer;
         display: block;
     }
     ul{
+
         width: 100%;
         display: none;
     }
     ul li{
+
         display: block;
         text-align: center;
     }
+
     .active{
 
         display: block;
@@ -269,6 +343,4 @@ button:hover{
         width: 100%;
         margin-top: 0;
     }
-}
-
 }

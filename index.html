@@ -1,31 +1,35 @@
 <html>
  <head>
   <title>Jah Website</title>
+  <meta name="viewport" content="width=devie-width, initial-scale=1, user-scalabe=no">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Candal&family=Itim&family=Josefin+Sans:wght@100;200;300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9423f34437.js" crossorigin="anonymous"></script>
  </head>
 <body>
 
-	<header>
-
-	    <nav id="navbar">
-  			<div class="toggle">
-  				<i class="fa fa-bars menu" aria-hidden="true"></i>
-  			</div>
-
-		    <ul>
-  				<li><a href="#">Home</a></li>
-  				<li><a href="#bio">Sobre</a></li>
-  				<li><a href="#music">Musicas</a></li>
-  				<li><a href="#vids">Videos</a></li>
-  				<li><a href="#contact">Contatos</a></li>
-			 </ul>
-		</nav>
+	<header class="showcase">
+    <div class="showcase-top">
+      <h1>Bem Vindo a pagina oficial <br>Jah Pity</h1>
+      <a href="#bio" class="btn bnt-xl">Saber Mais</a>
+    </div>
+    <nav id="navbar">
+      <div class="toggle">
+        <i class="fa fa-bars menu" aria-hidden="true"></i>
+      </div>
+      <ul>
+        <li><a href="#" >Home</a></li>
+        <li><a href="#bio">Sobre</a></li>
+        <li><a href="#music">Musicas</a></li>
+        <li><a href="#vids">Videos</a></li>
+        <li><a href="#contact">Contatos</a></li>
+      </ul>
+    </nav>
+    
 		<script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
 		<script type="text/javascript" src="js/nav.js"></script>
-
-
 	</header>
 
 	<main>
@@ -34,7 +38,8 @@
 				<h2>Sobre Mim</h2>
 				<hr>
 				<p>
-					Lorem ipsum dolor sit amet.
+
+
 					Lorem ipsum dolor sit amet consectetur.
 					Lorem, ipsum.
 				</p>
@@ -45,25 +50,27 @@
 		<section class="music_section" id="music">
 			<h2>Musicas</h2>
 			<hr>
-			<p>Lorem ipsum dolor sit.</p>
+			<p>
+        Gostas do meu trabalho. Ouve-os agora.
+      </p>
 
 			<div class="row">
 
 				<div class="column_one">
 					<img src="images/VICE.png" alt="VICE" style="width: 93%;">
 
-					<button class="btn listen">Listen</button>
+					<button class="btn listen">Ouvir</button>
 				</div>
 
 				<div class="column_two">
 					<img src="images/My Post-3.png" alt="VICE" style="width: 93%;">
 
-					<button class="btn listen">Listen</button>
+					<button class="btn listen">Ouvir</button>
 				</div>
 
 				<div class="column_three">
 					<img src="images/VICE.png" alt="VICE" style="width: 93%;">
-					<button class="btn listen">Listen</button>
+					<button class="btn listen">Ouvir</button>
 				</div>
 
 			</div>
@@ -72,7 +79,7 @@
 		<section class="vid_section" id="vids">
 			<h2>Videos</h2>
 			<hr>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+			<p>Veja as minhas colaboracoes, nos videos a seguir.</p>
 			<div>
 
 				<div class="container">
@@ -154,9 +161,18 @@
 
 	</main>
 
-	<footer>
-		<div>
-			<p>&copy;INavigate</p>
+	<footer class="footer">
+    <div class="footer-cols">
+
+         <i class="fab fa-soundcloud"></i>
+         <i class="fab fa-youtube"></i>
+         <i class="fab fa-instagram"></i>
+         <i class="fab fa-spotify"></i>
+
+
+    </div>
+		<div class="coyright">
+			<p>&copy;Jah Pity</p>
 		</div>
 	</footer>
 </body>
