@@ -4,13 +4,13 @@
 }
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Itim , sans-serif;
+  font-family: Itim , sans-serif;
 }
 
 p {
@@ -22,13 +22,13 @@ p {
 
 #navbar{
 
-    letter-spacing: 3px;
-    opacity: .9;
-    background-color: #0B1129;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    width: 100%;
-    font-family: Itim, sans-serif;
+  letter-spacing: 3px;
+  opacity: .9;
+  background-color: #0B1129;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  width: 100%;
+  font-family: Itim, sans-serif;
 }
 
 .showcase {
@@ -75,19 +75,32 @@ p {
 }
 
 footer {
-    opacity: .9;
-    background-color: #0B1129;
-    height: 100px;
-    font-size: 18px;
-    color: white;
-
+  opacity: .9;
+  background-color: #0B1129;
+  height: 100px;
+  font-size: 18px;
+  color: white;
 }
 
 footer p {
    text-align: center;
-   padding-top: 10px;
+   padding-top: 20px;
 }
-
+.footer-cols {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+.footer-cols i {
+  margin-top: .6rem;
+  padding-right: 2rem;
+  cursor: pointer;
+}
+.footer-cols a {
+  text-decoration: none;
+  color: #fff;
+}
 ul{
 
     text-align: center;
@@ -145,12 +158,15 @@ hr{
     background-color: #f2f2f2;
     padding-top: 50px;
     text-align: center;
+    word-wrap: break-word;
+    padding: 40px;
 }
 
 #about p{
 
     color: gray;
     margin-top: 20px;
+   
 }
 
 
@@ -159,13 +175,16 @@ music section styling
 
 */
 .music_section{
-    text-align: center;
-    padding-top: 50px;
+  text-align: center;
+  padding: 30px;
+  
 }
 
-.music_section p{
-    margin-top: 20px;
+.music_section p {
+  padding-top: 1rem;
 }
+
+
 
 .row{
 
@@ -177,17 +196,20 @@ music section styling
     padding-top: 50px;
 
 }
+
 .column_one{
     width: 27%;
-
-
+    padding-top: 1rem;
+   
 }
 .column_two{
     width: 27%;
+    padding-top: 1rem;
 
 }
 .column_three{
     width: 27%;
+    padding-top: 1rem;
 
 }
 
@@ -213,15 +235,14 @@ button:hover{
 
 .vid_section{
   text-align: center;
-  padding-top: 50px;
+  padding: 20px;
   background-color: #f2f2f2;
 }
 
 .vid_section p{
   color: gray;
   margin-top: 20px;
-
-
+  
 }
 /* grid properties display
     for 4 images in a 2x2 column
@@ -243,6 +264,13 @@ button:hover{
   text-align: center;
   border-radius: 5px;
   padding: 10px;
+  
+}
+.contact_section p {
+ padding: .5rem;
+}
+.column {
+  
 }
 
 .column form{
@@ -302,11 +330,11 @@ button:hover{
 
   }
     .row{
-       display: flex;
+      display: flex;
     }
 
     .column_one, .column_two, .column_three{
-        width: 100%;
+      width: 100%;
     }
 
     .container{
@@ -320,27 +348,27 @@ button:hover{
 
     .toggle{
 
-        cursor: pointer;
-        display: block;
+      cursor: pointer;
+      display: block;
     }
     ul{
 
-        width: 100%;
-        display: none;
+      width: 100%;
+      display: none;
     }
     ul li{
 
-        display: block;
-        text-align: center;
+      display: block;
+      text-align: center;
     }
 
     .active{
 
-        display: block;
+      display: block;
     }
 
     .column, input[type=submit] {
-        width: 100%;
-        margin-top: 0;
+      width: 100%;
+      margin-top: 0;
     }
 }
